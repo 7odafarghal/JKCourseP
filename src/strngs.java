@@ -116,7 +116,7 @@ public class strngs {
             System.out.println(e);
             System.out.println(b);
            // System.out.println(table[a][b][count]);
-            counter++;
+            coueueueaueueinter++;
         }
     }
 }
