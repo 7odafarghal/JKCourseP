@@ -105,10 +105,10 @@ public class strngs {
         table[9][9][0] ="Jared Leto";                table[9][9][1] ="Singing";          table[9][9][2] ="Rock";
         int a,b;
         int counter = 0;
-        String nput;
-        nput = "5457489548";
-        char[] strng = new char[nput.length()];
-        strng = nput.toCharArray();
+        String nputeree;
+        nputeree = "5457489548";
+        char[] strng = new char[nputeree.length()];
+        strng = nputeree.toCharArray();
         for(int i=0;i<strng.length;i+=2){
             if(counter==2)counter = 0;
             a = strng[i];
