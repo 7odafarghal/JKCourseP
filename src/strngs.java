@@ -103,7 +103,7 @@ public class strngs {
         table[9][7][0] ="keanu reeves";              table[9][7][1] ="Dodging/Fighting"; table[9][7][2] ="Bullets/Clones";
         table[9][8][0] ="Tom Cruise";                table[9][8][1] ="Sitting on";       table[9][8][2] ="Khalefa Tower";
         table[9][9][0] ="Jared Leto";                table[9][9][1] ="Singing";          table[9][9][2] ="Rock";
-        int e,b;
+        int a,b;
         int counter = 0;
         String inputer;
         inputer = "5457489548";
@@ -111,12 +111,12 @@ public class strngs {
         strng = inputer.toCharArray();
         for(int i=0;i<strng.length;i+=2){
             if(counter==2)counter = 0;
-            e = strng[i];
+            a = strng[i];
             b = strng[(i+1)];
-            System.out.println(e);
+            System.out.println(a);
             System.out.println(b);
            // System.out.println(table[a][b][count]);
-            coueueueaueueinter++;
+            counter++;
         }
     }
 }
