@@ -105,8 +105,7 @@ public class strngs {
         table[9][9][0] ="Jared Leto";                table[9][9][1] ="Singing";          table[9][9][2] ="Rock";
         int a,b;
         int counter = 0;//this counter iterates only between three values because there are only three types of strings the person the action the object
-        String inputer;
-        inputer = "5457489548";
+        String inputer = masih.nextLine();
         int[] num = new int[inputer.length()];
         //Putting every character in the string in an int array
         for(int i=0;i<inputer.length();i++){
@@ -119,7 +118,8 @@ public class strngs {
             if(counter>2)counter = 0;
             a = num[i];
             b = num[(i+1)];
-            System.out.println(table[a][b][counter]);
+            if(counter>1) System.out.print(table[a][b][counter] +".    ");
+            else System.out.print(table[a][b][counter] +". ");
             counter++;
         }
     }
