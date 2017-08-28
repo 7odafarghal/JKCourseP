@@ -120,6 +120,7 @@ public class strngs {
         //this loops jumps by two steps because every string in the table have a category -which is the first number-
         //and the string itself -which is the second number- but inside the loop
         //I take the two numbers by assigning a second variable the value i+1 so i don't miss the second number in the jump
+        //TODO fix the bug that cuases error if you enter more than 99 numbers
         for(int i=0;i<num.length;i+=2){
             if(counter>2)counter = 0;
             a = num[i];
