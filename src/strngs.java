@@ -104,18 +104,22 @@ public class strngs {
         table[9][8][0] ="Tom Cruise";                table[9][8][1] ="Sitting on";       table[9][8][2] ="Khalefa Tower";
         table[9][9][0] ="Jared Leto";                table[9][9][1] ="Singing";          table[9][9][2] ="Rock";
         int a,b;
-        int counter = 0;
+        int counter = 0;//this counter iterates only between three values because there are only three types of strings the person the action the object
         String inputer;
         inputer = "5457489548";
-        char[] strng = new char[inputer.length()];
-        strng = inputer.toCharArray();
-        for(int i=0;i<strng.length;i+=2){
-            if(counter==2)counter = 0;
-            a = strng[i];
-            b = strng[(i+1)];
-            System.out.println(a);
-            System.out.println(b);
-           // System.out.println(table[a][b][count]);
+        int[] num = new int[inputer.length()];
+        //Putting every character in the string in an int array
+        for(int i=0;i<inputer.length();i++){
+            num[i] = inputer.charAt(i)-'0';//subtracting that 0 to get the real integer not the ASCII value
+        }
+        //this loops jumps by two steps because every string in the table have a category -which is the first number-
+        //and the string itself -which is the second number- but inside the loop
+        //I take the two numbers by assigning a second variable the value i+1 so i don't miss the second number in the jump
+        for(int i=0;i<num.length;i+=2){
+            if(counter>2)counter = 0;
+            a = num[i];
+            b = num[(i+1)];
+            System.out.println(table[a][b][counter]);
             counter++;
         }
     }
