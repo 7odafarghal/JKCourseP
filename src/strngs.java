@@ -2,6 +2,12 @@ import java.util.*;
 public class strngs {
     public static void main(String[] args){
         Scanner masih = new Scanner(System.in);
+        //create the 3d array
+        /*for(int i=0;i<10;i++) {
+            for (int x = 0; x < 10; x++) {
+                System.out.println("table[" + i + "][" + x + "][1] =\"\"; table[" + i + "][" + x + "][2] =\"\"; table[" + i + "][" + x + "][3] =\"\";");
+            }
+        }*/
         String[][][] table = new String[10][10][3];
         table[0][0][0] ="Zlatan Ibrahimović";        table[0][0][1] ="Doing";            table[0][0][2] ="Taekwondo";
         table[0][1][0] ="Lionel Messi";              table[0][1][1] ="Holding";          table[0][1][2] ="Shirt";
