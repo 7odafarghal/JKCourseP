@@ -20,4 +20,12 @@
     protected int num;: this is visible in its package and child classes
     int num;: this is visble only in it's package
 
+
+//Int = String.charAt();
+    when trying to store a number in a string into integer it's stored as its ASCII value
+        because it's a string not a number so 3 would be stored as 51
+    to get around this you should subtract from the character the charcter '0' or the number 48
+        so it should be like this: int num = String.charAt(i)-'0';
+
+
 @who is Dodie Ballard
