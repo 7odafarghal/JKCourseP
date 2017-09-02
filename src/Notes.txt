@@ -1,0 +1,23 @@
+//interfaces: they are like methods that can have methods inside them
+    if i make an interface named Info and has a method called showInfo
+    and implement that interface in classes person and alien
+    when i type in the main program:
+        1. Info info1 = new Person(); this means that info1 refers to the instance of Info in the Person class
+            also i could type: Info info2 = selena; and that also means that it refers to the instance of Info in the class that selena is an object of.
+        2. or you can make a class: private static void ShowInfo(Info info){info.showInfow();}
+            and then pass the object when calling it: ShowInfor(selena); and it would print selena's information
+    but the first way is better because you specify which method you want to excute, when you just excute everything in the class the second way.
+
+
+//Strings input
+    numbers input leaves a white space after it
+        so if i want to read a string after a number i should use a masih.next(); to take the white space before reading the string
+
+
+//public private protected
+    public int num;: this is visible everywhere
+    private int num;: this is visible only in its class
+    protected int num;: this is visible in its package and child classes
+    int num;: this is visble only in it's package
+
+@who is Dodie Ballard
