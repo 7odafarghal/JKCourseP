@@ -9,7 +9,7 @@ public class ScndsPssd {
         if(scpsd/60>59){
             min = (scpsd/60)%60;
             hr = (scpsd/60)/60;
-            //for(int i=0;hr>23;i++)hr -= 24;
+            //for(int i=0;hr>23;i++)hr -= 24; //this will count the time passed from the last day only
         }
         else{
             min = scpsd/60;
