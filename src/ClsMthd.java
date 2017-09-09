@@ -1,7 +1,9 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class ClsMthd {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner masih = new Scanner(System.in);
 
         Person megan = new Person("Megan Fox");
@@ -12,11 +14,19 @@ public class ClsMthd {
         System.out.println(megan.getJob() +"\n");
 
         Person selena = new Person("Selena Gomez");
-        selena.setAge(24);
-        selena.setJob("Singer");
-        selena.ncknm = "sel";
-        selena.speak("hi");
-        System.out.println(selena.getJob() +"\n");
+        File fl = new File("selena.txt");
+        Scanner masihmlf = null;
+        try {
+            masihmlf = new Scanner(fl);
+            selena.setAge(masihmlf.nextInt());
+            masihmlf.nextLine();
+            selena.setJob(masihmlf.nextLine());
+            selena.ncknm = masihmlf.nextLine();
+            selena.speak(masihmlf.nextLine());
+            System.out.println(selena.getJob() +"\n");
+        } catch (FileNotFoundException e) {
+            System.out.println("Selena's file is not found\n.\n.");
+        }
 
         Person xenia = new Person("Xenia Tchoumitcheva");
         xenia.setAge(27);

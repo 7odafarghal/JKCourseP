@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Person extends Creature implements Info {
     public String ncknm;
     private static int counter = 0;
