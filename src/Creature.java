@@ -1,4 +1,4 @@
-class Creature {
+abstract class Creature {
         public String name;//to be private
         public int age;//to be private
         public int id;
