@@ -1,5 +1,5 @@
 public class Number {
-    //positive powers
+    //positive power
     public static int Power(int num,int pow){
         int numb = num;
         if(pow==0)numb = 1;
@@ -14,7 +14,7 @@ public class Number {
         }
         return numb;
     }
-    //negative powers
+    //negative power
     public static double Power(int num,double pow){
         int numb =num;
         double numbd;
