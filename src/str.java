@@ -3,6 +3,7 @@ public class str {
     public static void main(String[] args){
         Scanner msh = new Scanner(System.in);
         int rc = msh.nextInt();
+        msh.close();
         String[][] arRy = new String[rc][rc];
         //loop to select each row
         for(int i = 0; i<arRy.length;i++) {
@@ -22,6 +23,7 @@ public class str {
         // better solution using while loop
         Scanner mash = new Scanner(System.in);
         int rb = mash.nextInt();
+        mash.close();
         String[][] arRry = new String[rb][rb];
         int q =0;
         //loop to select each row
