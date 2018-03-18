@@ -9,6 +9,7 @@ public class CalculateTime {
          int x=masih.nextInt();
          int y=masih.nextInt();
          int z=masih.nextInt();
+         masih.close();
         System.out.println(((((x*60)+y)*60)+z)-((((a*60)+b)*60)+c));
     }
 }
