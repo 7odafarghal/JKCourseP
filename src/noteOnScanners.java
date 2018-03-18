@@ -7,7 +7,7 @@ public class noteOnScanners {
         masih.nextLine();/*any scanner that reads a number leaves a white space for the next string scanner
         so this takes the white space and allows the next one to read the actual input*/
         String s = masih.nextLine();
-
+        masih.close();
 
 
         System.out.println("String: " + s);
