@@ -62,6 +62,6 @@ public class ClsMthd {
             default:
                 System.out.println("there is no person with the name " + ask);
         }
-
+        masih.close();
     }
 }
