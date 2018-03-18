@@ -1,5 +1,5 @@
 public class Number {
-    //positive power
+    //positive powers
     public static int Power(int num,int pow){
         int numb = num;
         if(pow==0)numb = 1;
@@ -14,7 +14,7 @@ public class Number {
         }
         return numb;
     }
-    //negative power
+    //negative powers
     public static double Power(int num,double pow){
         int numb =num;
         double numbd;
@@ -28,10 +28,10 @@ public class Number {
     }
 
     //this series is(num^0+num^1..........+num^pow) takes only positive powers
-    public static int seriesOfpPowers(int num ,int maxpPow){
+    public static int seriesOfpPowers(int num ,int maxPow){
         int numb=num;
         int zwei=0;
-        for (int i = 0; i < maxpPow; i++) {
+        for (int i = 0; i < maxPow; i++) {
             for (int j = 0; j <= i; j++) {
                 if(j==0){numb=1;continue;}
                 numb = numb * num;
@@ -40,7 +40,7 @@ public class Number {
             zwei+=numb;
         }
         System.out.print("= ");
-        if(maxpPow==0) return 1;
+        if(maxPow==0) return 1;
         else return zwei;
     }
 }
